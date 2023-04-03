@@ -8,19 +8,19 @@ public class Q_10869 {
         a = sc.nextInt();
         b = sc.nextInt();
 
-        c=a+b;
+        c = a + b;
         System.out.printf("%d \n", c);
 
-        c=a-b;
-        System.out.printf("%d \n",c);
-
-        c=a*b;
+        c = a - b;
         System.out.printf("%d \n", c);
 
-        c=a/b;
+        c = a * b;
         System.out.printf("%d \n", c);
 
-        c=a%b;
+        c = a / b;
+        System.out.printf("%d \n", c);
+
+        c = a % b;
         System.out.printf("%d \n", c);
     }
 }
