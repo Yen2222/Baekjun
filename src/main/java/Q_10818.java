@@ -12,17 +12,10 @@ public class Q_10818 {
         }
         int max=aa[0], min=aa[0];
         for(int i =0; i<aa.length; i++){
-            for(int j =1; j<aa.length; j++) {
                 if (aa[i] > max)
                     max = aa[i];
-            }
-        }
-
-        for(int i =0; i<aa.length; i++){
-            for(int j =1; j<aa.length; j++) {
                 if (aa[i] < min)
                     min = aa[i];
-            }
         }
         System.out.printf("%d %d",min, max);
     }
