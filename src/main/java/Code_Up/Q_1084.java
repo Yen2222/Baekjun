@@ -22,8 +22,8 @@ public class Q_1084 {
                 }
             }
         }
+        bw.write(String.valueOf(hap));
         br.close();
         bw.flush();
-        System.out.print(hap);
     }
 }
