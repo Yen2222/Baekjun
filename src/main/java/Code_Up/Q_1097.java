@@ -6,12 +6,12 @@ public class Q_1097 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int aa [][] = new int[19][19];
+        int aa [][] = new int[20][20];
         int bb [] = new int[2];
         int cc [] = new int[2];
 
-        for(int i = 0; i<aa.length; i++){
-            for(int j = 0; j<aa.length; j++){
+        for(int i = 0; i<19; i++){
+            for(int j = 0; j<19; j++){
                aa[i][j] = sc.nextInt();
             }
         }
@@ -22,8 +22,8 @@ public class Q_1097 {
             cc[i] = sc.nextInt();
         }
 
-        for(int i = 0; i<aa.length; i++){
-            for(int j = 0; j<aa.length; j++){
+        for(int i = 0; i<19; i++){
+            for(int j = 0; j<19; j++){
                 if(i== bb[0]-1 || i == bb[1]-1 || j== cc[0]-1 || j == cc[1]-1){
                     aa [i][j] --;
                     if(i==bb[0]-1&&j== cc[0]-1 || i == bb[1]-1&&j== cc[0]-1 || i== bb[0]-1&&j == cc[1]-1 || i == bb[1]-1&&j == cc[1]-1)
