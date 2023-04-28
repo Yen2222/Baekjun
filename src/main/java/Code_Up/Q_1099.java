@@ -12,23 +12,24 @@ public class Q_1099 {
                 aa[i][j] = sc.nextInt();
             }
         }
-        for (int i = 0; i < aa.length; i++) {
-            for (int j = 0; j <aa.length; j++) {
-                if (aa[i][j] == 0) {
-                    aa[i][j] = 9;
-                }
-                if (aa[i][j] == 1) {
-                    i++;
-                }
+        int k = 1;
+        aa[1][1] = 9;
+        for (int i = 1; i <9; i++) {
+            if (aa[k][i] == 0)
+                aa[k][i] = 9;
+            else if (aa[k][i] == 1) {
+                i -= 2;
+                k++;
+            } else if (aa[k][i] == 2) {
+                aa[k][i] = 9;
+                break;
             }
-
         }
-
-        for (int i = 0; i < aa.length; i++) {
-            for (int j = 0; j < aa.length; j++) {
-                System.out.printf("%d ", aa[i][j]);
+            for (int i = 0; i < aa.length; i++) {
+                for (int j = 0; j < aa.length; j++) {
+                    System.out.printf("%d ", aa[i][j]);
+                }
+                System.out.println();
             }
-            System.out.println();
         }
     }
-}
