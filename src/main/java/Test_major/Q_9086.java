@@ -10,7 +10,7 @@ public class Q_9086 {
 
         for(int i=0; i<t; i++){
             String st = sc.nextLine();
-            int str = st.length();
+            String str = st.substring(0,1);
             System.out.print(str);
         }
     }
