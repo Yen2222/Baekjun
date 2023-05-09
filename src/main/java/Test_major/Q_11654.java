@@ -7,9 +7,12 @@ import java.util.Scanner;
 
 public class Q_11654 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        byte num=(byte)br.readLine().charAt(0);
 
-        byte num=(byte)br.readLine().charAt(0);
-        System.out.println(num);
+        Scanner sc = new Scanner(System.in);
+        char num = sc.next().charAt(0);
+        System.out.println((int)num);
     }
 }
